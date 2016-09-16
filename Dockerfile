@@ -29,7 +29,7 @@
 # Author: Stephen Fox (stephen.fox@nimbix.net)
 #
 
-FROM jarvice/base-centos-slurm:6-gcc-4-9
+FROM jarvice/base-centos-slurm:6
 MAINTAINER stephen.fox@nimbix.net
 
 ENV TOOLCHAIN=/opt/rh/devtoolset-3/enable
