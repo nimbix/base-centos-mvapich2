@@ -7,20 +7,17 @@ To activate mvapich2:
 source /opt/mvapich2-2.2/enable
 ```
 
-or with SLURM
-
-```bash
-
-source /opt/mvapich2-2.2-slurm-16.05.4/enable
-```
 The toolchain is built with gcc-4.9 using devtoolset-3.
 
 Example usage:
 
 ```bash
 
-mpirun -np 32 -hostfile /etc/JARVICE/nodes echo hello
+mpirun -np 32 -hostfile /etc/JARVICE/nodes cat /etc/hostname
 ```
 
+Or
 
-
+```bash
+mpiexec -np 32 -f /etc/JARVICE/nodes cat /etc/hostname
+```
